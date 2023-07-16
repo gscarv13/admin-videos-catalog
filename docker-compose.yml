@@ -1,0 +1,10 @@
+version: "3.3" 
+
+services:
+  app:
+    build: . # will build from Dockerfile
+    container_name: admin-api-typescript-app
+    user: "1000:1000"
+    volumes:
+      - .:/home/node/app
+    
